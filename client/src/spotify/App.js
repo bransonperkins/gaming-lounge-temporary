@@ -5,7 +5,7 @@ import hash from "./hash";
 import SpotifyPlayer from "./SpotifyPlayer.js";
 import "../App.css";
 import "./SpotifyPlayer.css";
-import Button from "react-bootstrap/Button";
+import { Button, Container} from "reactstrap";
 
 class App extends Component {
   constructor() {
@@ -87,19 +87,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-           
+      <Container fluid>
           {!this.state.token && (
-            <Button variant="primary" className="spotify-btn">
-            <a
-              className="btn--loginApp-link"
-              href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-                "%20"
-              )}&response_type=token&show_dialog=true`}
-            >
-              <span className="spotify-login">Login to Spotify</span>
-            </a>
+            <Button variant="primary">
+              <a
+                className="btn--loginApp-link"
+                href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
+                  "%20"
+                )}&response_type=token&show_dialog=true`}
+              >
+                <span>Login to Spotify</span>
+              </a>
             </Button>
           )}
           {this.state.token && !this.state.no_data && (
@@ -114,10 +112,7 @@ class App extends Component {
               You need to be playing a song on Spotify, for something to appear here.
             </p>
           )}
-          
-        </header>
-           
-      </div>
+      </Container>
     );
   }
 }

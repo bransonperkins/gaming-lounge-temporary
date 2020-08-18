@@ -15,7 +15,7 @@ import {
 import ScrollToBottom from "react-scroll-to-bottom";
 import "./Chat.css";
 import App from "../spotify/App";
-import { Button, Container, Col, Row } from "react-bootstrap";
+import { Button, Container, Col, Row } from "reactstrap";
 
 var stompClient = null;
 const Chat = (props) => {
@@ -122,7 +122,7 @@ const Chat = (props) => {
     <div className="gaming-lounge">
       <Container fluid>
         <Row>
-          <Col>
+          <Col md={{ size: 8}}>
               <div id="frame">
                 <div id="sidepanel">
                   <div id="profile">
@@ -166,7 +166,7 @@ const Chat = (props) => {
                         >
                           <div className="wrap">
                             <span className="contact-status online"></span>
-                            <img id={contact.id} src={contact.profilePicture} alt="" />
+                            <img className="img-responsive" id={contact.id} src={contact.profilePicture} alt="" />
                             <div className="meta">
                               <p className="name">{contact.name}</p>
                               {contact.newMessages !== undefined &&
@@ -194,7 +194,7 @@ const Chat = (props) => {
                 </div>
                 <div className="content">
                   <div className="contact-profile">
-                    <img src={activeContact && activeContact.profilePicture} alt="" />
+                    <img className="img-responsive" src={activeContact && activeContact.profilePicture} alt="" />
                     <p>{activeContact && activeContact.name}</p>
                   </div>
                   <ScrollToBottom className="messages">
@@ -238,7 +238,7 @@ const Chat = (props) => {
               </div>
               </Col>
               
-            <Col>
+            <Col md={{ size: 4}}>
              <App />
             </Col>
           </Row>
