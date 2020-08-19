@@ -1,3 +1,7 @@
+.btn-color{
+  background-color: rgb(126, 110, 110)
+}
+
 #frame {
   width: 100%;
   min-width: 360px;
@@ -644,7 +648,7 @@
   margin: 6px 0 0 8px;
 }
 #frame .content .messages ul li.sent p {
-  background: #243140;
+  background: #a1c0e4;
   float: right;
 }
 #frame .content .messages ul li img {
@@ -727,7 +731,7 @@
   }
 }
 #frame .content .message-input .wrap button:hover {
-  background: #435f7a;
+  background: #74a3ce;
 }
 #frame .content .message-input .wrap button:focus {
   outline: none;

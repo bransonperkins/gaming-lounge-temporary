@@ -227,7 +227,7 @@ const Chat = (props) => {
                       />
 
                       <Button
-                        icon={<i class="fa fa-paper-plane" aria-hidden="true"></i>}
+                        icon={<i class="fa fa-paper-plane btn-color" aria-hidden="true"></i>}
                         onClick={() => {
                           sendMessage(text);
                           setText("");
