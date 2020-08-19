@@ -8,8 +8,10 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.win2020</groupId>
 	<artifactId>chat-svc</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>chat-svc</name>
 	<description>Chat application using Websockets</description>

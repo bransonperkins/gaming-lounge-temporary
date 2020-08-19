@@ -15,7 +15,7 @@ import {
 import ScrollToBottom from "react-scroll-to-bottom";
 import "./Chat.css";
 import App from "../spotify/App";
-import { Button, Container, Col, Row } from "reactstrap";
+import { Button, Container, Col, Row, Badge } from "reactstrap";
 
 var stompClient = null;
 const Chat = (props) => {
@@ -118,6 +118,7 @@ const Chat = (props) => {
     );
   };
 
+
   return (
     <div className="gaming-lounge">
       <Container fluid>
@@ -184,7 +185,7 @@ const Chat = (props) => {
                   <div id="bottom-bar">
                     <button id="addcontact">
                       <i className="fa fa-user fa-fw" aria-hidden="true"></i>{" "}
-                      <a href="/"><span>Profile</span></a>
+                      <Badge href="/"><span>Profile</span></Badge>
                     </button>
                     <button id="settings">
                       <i className="fa fa-cog fa-fw" aria-hidden="true"></i>{" "}

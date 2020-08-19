@@ -1,8 +1,7 @@
 spring:
   data:
     mongodb:
-      database: test_db
-      port: 27017
+      uri: mongodb+srv://fluffylizards:win2020@gaming-lounge.cwniv.mongodb.net/users?retryWrites=true&w=majority
 
 server:
   port: 8081

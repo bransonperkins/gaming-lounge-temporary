@@ -5,7 +5,7 @@ import hash from "./hash";
 import SpotifyPlayer from "./SpotifyPlayer.js";
 import "../App.css";
 import "./SpotifyPlayer.css";
-import { Button, Container} from "reactstrap";
+import { Button, Container, Badge } from "reactstrap";
 
 class App extends Component {
   constructor() {
@@ -89,15 +89,15 @@ class App extends Component {
     return (
       <Container fluid>
           {!this.state.token && (
-            <Button variant="primary">
-              <a
+            <Button outline color="success">
+              <Badge color="success"
                 className="btn--loginApp-link"
                 href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
                   "%20"
                 )}&response_type=token&show_dialog=true`}
               >
                 <span>Login to Spotify</span>
-              </a>
+              </Badge>
             </Button>
           )}
           {this.state.token && !this.state.no_data && (
