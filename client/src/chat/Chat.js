@@ -203,7 +203,7 @@ const Chat = (props) => {
                       {messages.map((msg) => (
                         <li className={msg.senderId === currentUser.id ? "sent" : "replies"}>
                           {msg.senderId !== currentUser.id && (
-                            <img src={activeContact.profilePicture} alt="" />
+                            <img className="img-responsive" src={activeContact.profilePicture} alt="" />
                           )}
                           <p>{msg.content}</p>
                         </li>
