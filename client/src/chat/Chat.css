@@ -24,8 +24,7 @@
   color: #f5f5f5;
   overflow: hidden;
   position: relative;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+ 
 }
 @media screen and (max-width: 735px) {
   #frame #sidepanel {
@@ -645,7 +644,7 @@
   margin: 6px 0 0 8px;
 }
 #frame .content .messages ul li.sent p {
-  background: #f5f5f5;
+  background: #243140;
   float: right;
 }
 #frame .content .messages ul li img {
@@ -741,4 +740,5 @@
   width: 50%;
   padding: 10px;
   text-align: center;
+  background-color: #2c3e50
 }
