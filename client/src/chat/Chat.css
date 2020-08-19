@@ -6,7 +6,6 @@
   min-height: 300px;
   max-height: 720px;
   background: #e6eaea;
-  margin-left: 5%;
 }
 @media screen and (max-width: 360px) {
   #frame {
@@ -733,4 +732,13 @@
 }
 #frame .content .message-input .wrap button:focus {
   outline: none;
+}
+
+.center {
+  margin-top: 0%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }

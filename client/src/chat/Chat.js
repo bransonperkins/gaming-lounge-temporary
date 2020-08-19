@@ -123,7 +123,7 @@ const Chat = (props) => {
     <div className="gaming-lounge">
       <Container fluid>
         <Row>
-          <Col md={{ size: 8}}>
+          <Col md={{ size: 6}}>
               <div id="frame">
                 <div id="sidepanel">
                   <div id="profile">
@@ -239,7 +239,8 @@ const Chat = (props) => {
               </div>
               </Col>
               
-            <Col md={{ size: 4}}>
+            <Col md={{ size: 6}} className="center">
+             {/* this is the spotify component */}
              <App />
             </Col>
           </Row>
