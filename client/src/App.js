@@ -5,6 +5,7 @@ import Signup from "./signup/Signup";
 import Profile from "./profile/Profile";
 import Chat from "./chat/Chat";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const AppContext = React.createContext();
 const App = (props) => {
