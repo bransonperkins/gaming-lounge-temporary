@@ -275,7 +275,7 @@ class Game extends Component {
                         }
                     </Board>
                     <div className="buttons">
-                        <Link to="/"><Button value="Settings" /></Link>
+                        
                         <Button onClick={() => this.scoreBoard()} value="Score Board" />
                         <Button onClick={() => this.start()} value="Restart" />
                     </div>
