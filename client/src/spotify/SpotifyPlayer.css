@@ -8,12 +8,12 @@ img{
     display: flex;
     align-items: center;
     z-index: 100;
-    color: white;
+    color: rgb(3, 7, 10);
   }
   
   .songRow:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: grey;
     opacity: 0.8;
   }
   
@@ -28,7 +28,7 @@ img{
   .songRow__info > p {
     font-size: 14px;
     margin-top: 3px;
-    color: gray;
+    color: black;
   }
   
   .songRow__album {
