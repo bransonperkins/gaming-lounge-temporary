@@ -1,6 +1,6 @@
 .board {
-    width: 200px;
-	height: 200px;
+    width: 320px;
+	height: 320px;
 	margin: 11px auto;
     background-color: var(--bgc);
     color: var(--text-color);
