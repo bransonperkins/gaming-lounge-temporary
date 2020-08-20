@@ -244,11 +244,11 @@ const Chat = (props) => {
              {/* this is the spotify component */}
             <App />
             
-             
+             <App1/>
             </Col>
           
           </Row>
-          <App1/>
+          
           </Container>
 
           
