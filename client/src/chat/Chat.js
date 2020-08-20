@@ -204,7 +204,7 @@ const Chat = (props) => {
                       {messages.map((msg) => (
                         <li className={msg.senderId === currentUser.id ? "sent" : "replies"}>
                           {msg.senderId !== currentUser.id && (
-                            <img src={activeContact.profilePicture} alt="" />
+                            <img className="img-responsive" src={activeContact.profilePicture} alt="" />
                           )}
                           <p>{msg.content}</p>
                         </li>
@@ -228,7 +228,7 @@ const Chat = (props) => {
                       />
 
                       <Button
-                        icon={<i class="fa fa-paper-plane" aria-hidden="true"></i>}
+                        icon={<i class="fa fa-paper-plane btn-color" aria-hidden="true"></i>}
                         onClick={() => {
                           sendMessage(text);
                           setText("");
@@ -242,16 +242,11 @@ const Chat = (props) => {
               
             <Col md={{ size: 6}} className="center">
              {/* this is the spotify component */}
-            <App />
-            
-             <App1/>
+             <App />
+             <App1 />
             </Col>
-          
           </Row>
-          
           </Container>
-
-          
         </div>
   );
 };
