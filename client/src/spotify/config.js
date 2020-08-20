@@ -1,7 +1,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 // Replace with your app's client ID, redirect URI and desired scopes
-export const clientId = "004729cd11d94a2e942d64d585d2a019";
+export const clientId = "aa4981be7ffc44f9b65c852e360eaf72";
 export const redirectUri = "http://localhost:3000/chat";
 export const scopes = [
     "user-top-read",
